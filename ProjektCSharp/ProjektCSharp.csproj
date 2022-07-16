@@ -195,6 +195,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Data\DbContext.cs" />
     <Compile Include="Data\Film.cs" />
     <Compile Include="Data\Klient.cs" />
     <Compile Include="Data\Reżyser.cs" />
