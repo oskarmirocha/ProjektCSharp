@@ -2,8 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using ProjektCSharp.Data;
 using System;
-
-
+using Wypożyczenia.Data;
+using System.Linq;
 
 namespace ProjektCSharp
 {
@@ -12,17 +12,17 @@ namespace ProjektCSharp
     /// </summary>
     public partial class MainWindow : Window
     {
-        readonly DbContext dbContext;
-        public MainWindow(DbContext dbContext)
+        ApplicationDbContext applicationDbContext;
+        public MainWindow(ApplicationDbContext applicationDbContext)
         {
-            this.dbContext = dbContext;
+            this.applicationDbContext = applicationDbContext;
             InitializeComponent();
             GetWypożyczenia();
         }
 
         private void GetWypożyczenia()
         {
-            WypożyczeniaDG.ItemsSource = dbContext.Wypożyczenie.ToList();
+            WypożyczeniaDG.ItemsSource = applicationDbContext.Wypożyczenia.ToList();
         }
     }
 }

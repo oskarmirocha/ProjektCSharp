@@ -2,11 +2,11 @@
 using ProjektCSharp.Data;
 
 
-namespace Wypożyczenia
+namespace Wypożyczenia.Data
 {
-    public class DbContext : Microsoft.EntityFrameworkCore.DbContext
+    public class ApplicationDbContext : Microsoft.EntityFrameworkCore.DbContext
     {
-        public DbContext(DbContextOptions<DbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
             Database.EnsureCreated();
         }

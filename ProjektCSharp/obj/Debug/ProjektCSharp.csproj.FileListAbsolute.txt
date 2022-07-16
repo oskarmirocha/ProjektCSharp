@@ -80,3 +80,8 @@ C:\Users\CapsD\Desktop\Sesja 2k22 Lato\ProjektCSharp\ProjektCSharp\ProjektCSharp
 C:\Users\CapsD\Desktop\Sesja 2k22 Lato\ProjektCSharp\ProjektCSharp\ProjektCSharp\obj\Debug\ProjektCSharp.csproj.CopyComplete
 C:\Users\CapsD\Desktop\Sesja 2k22 Lato\ProjektCSharp\ProjektCSharp\ProjektCSharp\obj\Debug\ProjektCSharp.exe
 C:\Users\CapsD\Desktop\Sesja 2k22 Lato\ProjektCSharp\ProjektCSharp\ProjektCSharp\obj\Debug\ProjektCSharp.pdb
+C:\Users\CapsD\Desktop\Sesja 2k22 Lato\ProjektCSharp\ProjektCSharp\ProjektCSharp\bin\Debug\ProjektCSharp.exe.manifest
+C:\Users\CapsD\Desktop\Sesja 2k22 Lato\ProjektCSharp\ProjektCSharp\ProjektCSharp\bin\Debug\ProjektCSharp.application
+C:\Users\CapsD\Desktop\Sesja 2k22 Lato\ProjektCSharp\ProjektCSharp\ProjektCSharp\obj\Debug\ProjektCSharp.TrustInfo.xml
+C:\Users\CapsD\Desktop\Sesja 2k22 Lato\ProjektCSharp\ProjektCSharp\ProjektCSharp\obj\Debug\ProjektCSharp.exe.manifest
+C:\Users\CapsD\Desktop\Sesja 2k22 Lato\ProjektCSharp\ProjektCSharp\ProjektCSharp\obj\Debug\ProjektCSharp.application
