@@ -4,9 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektCSharp"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" Background="LightGray"
+        Title="MainWindow" Height="600" Width="900">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" FontWeight ="Bold" FontSize="20" FontFamily="Arial" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Wypożyczalnia projekt C#"></Label>
+        <DataGrid Grid.Row="1" AutoGenerateColumns="False" Margin="10,254,10,10" Name="WypożyczeniaDG" IsReadOnly="True" Grid.RowSpan="2" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id Klienta" Width="70" Binding="{Binding Id_klient}"/>
+                <DataGridTextColumn Header="Imię" Width="180" Binding="{Binding Imię}"/>
+                <DataGridTextColumn Header="Nazwisko" Width="180" Binding="{Binding Nazwisko}"/>
+                <DataGridTextColumn Header="Id Filmu" Width="70" Binding="{Binding Id_klient}"/>
+                <DataGridTextColumn Header="Tytuł" Width="250" Binding="{Binding Tytuł}"/>
+                <DataGridTextColumn Header="Data Wypożyczenia" Width="150" Binding="{Binding Id_klient}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
