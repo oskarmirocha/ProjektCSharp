@@ -15,12 +15,12 @@
         <Label Grid.Row="0" FontWeight ="Bold" FontSize="20" FontFamily="Arial" HorizontalAlignment="Center" VerticalAlignment="Center" Content=""></Label>
         <DataGrid Grid.Row="1" AutoGenerateColumns="False" Margin="10,254,10,10" Name="WypożyczeniaDG" IsReadOnly="True" Grid.RowSpan="2" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id Klienta" Width="70" Binding="{Binding Id_klient}"/>
+                <!--"<DataGridTextColumn Header="Id Klienta" Width="70" Binding="{Binding Id_klient}"/> -->
                 <DataGridTextColumn Header="Imię" Width="180" Binding="{Binding Imie}"/>
                 <DataGridTextColumn Header="Nazwisko" Width="180" Binding="{Binding Nazwisko}"/>
-                <DataGridTextColumn Header="Id Filmu" Width="70" Binding="{Binding Id_Film}"/>
+                <!--<DataGridTextColumn Header="Id Filmu" Width="70" Binding="{Binding Id_Film}"/> -->
                 <DataGridTextColumn Header="Tytuł" Width="228" Binding="{Binding Tytuł}"/>
-                <DataGridTextColumn Header="Data Wypożyczenia" Width="150" Binding="{Binding Data_wypożyczenia}"/>
+                <DataGridTextColumn Header="Data Wypożyczenia" Width="150" Binding="{Binding Data_wypożyczenia}"/> 
 
             </DataGrid.Columns>
         </DataGrid>
@@ -52,7 +52,7 @@
                         <Label Grid.Row="2" Grid.Column="0" Content="Tytuł"/>
                         <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Tytuł}" />
 
-                        <Button Grid.Row="3" Content="Wypożycz" Margin="0,29,106,-29"/>
+                        <Button Grid.Row="3" Content="Wypożycz" Margin="0,29,106,-29" Click="DodajNoweWypożyczenie"/>
 
                     </Grid>
                 </StackPanel>

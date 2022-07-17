@@ -17,10 +17,10 @@ namespace ProjektCSharp
             ServiceCollection services = new ServiceCollection();
             services.AddDbContext<ApplicationDbContext>(option =>
             {
-                option.UseSqlite("Data Source = Film.db");
-                option.UseSqlite("Data Source = Wypożyczenie.db");
                 option.UseSqlite("Data Source = Klient.db");
                 option.UseSqlite("Data Source = Reżyser.db");
+                option.UseSqlite("Data Source = Wypożyczenie.db");
+                option.UseSqlite("Data Source = Film.db");
             });
 
             services.AddSingleton<MainWindow>();

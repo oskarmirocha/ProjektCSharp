@@ -46,5 +46,13 @@ namespace ProjektCSharp
         {
             WypożyczeniaDG.ItemsSource = applicationDbContext.Klienci.ToList();
         }
+
+        private void DodajNoweWypożyczenie(object s, RoutedEventArgs e)
+        {
+            ApplicationDbContext.Wypożyczenia.Add(NoweWypożyczenie);
+            ApplicationDbContext.SaveChanges();
+            GetWypożyczenia();
+            NoweWypożyczenie = new Wypożyczenie();
+        }
     }
 }

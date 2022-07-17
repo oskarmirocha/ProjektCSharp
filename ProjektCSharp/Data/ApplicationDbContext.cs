@@ -16,11 +16,11 @@ namespace Wypożyczenia.Data
         internal DbSet<Wypożyczenie> Wypożyczenia { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Film>().HasData(GetFilmy());
-            modelBuilder.Entity<Wypożyczenie>().HasData(GetWypożyczenia());
+        { 
             modelBuilder.Entity<Reżyser>().HasData(GetReżyserzy());
             modelBuilder.Entity<Klient>().HasData(GetKlienci());
+            modelBuilder.Entity<Wypożyczenie>().HasData(GetWypożyczenia());
+            modelBuilder.Entity<Film>().HasData(GetFilmy());
 
             base.OnModelCreating(modelBuilder);
         }
