@@ -4,7 +4,7 @@ using ProjektCSharp.Data;
 
 namespace Wypożyczenia.Data
 {
-    public class ApplicationDbContext : Microsoft.EntityFrameworkCore.DbContext
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -49,18 +49,18 @@ namespace Wypożyczenia.Data
         {
             return new Reżyser[]
             {
-                new Reżyser{ Id_reżyser = 1, Imię = "Quentin", Nazwisko="Tarantino", Kraj_pochodzenia= "Stany Zjednoczone"},
-                new Reżyser{ Id_reżyser = 2, Imię = "Oriol", Nazwisko="Paulo", Kraj_pochodzenia= "Hiszpania"},
-                new Reżyser{ Id_reżyser = 3, Imię = "Frank", Nazwisko="Darabont", Kraj_pochodzenia= "Francja"},
+                new Reżyser{ Id_reżyser = 1, Imie = "Quentin", Nazwisko="Tarantino", Kraj_pochodzenia= "Stany Zjednoczone"},
+                new Reżyser{ Id_reżyser = 2, Imie = "Oriol", Nazwisko="Paulo", Kraj_pochodzenia= "Hiszpania"},
+                new Reżyser{ Id_reżyser = 3, Imie = "Frank", Nazwisko="Darabont", Kraj_pochodzenia= "Francja"},
             };
         }
         private Klient[] GetKlienci()
         {
             return new Klient[]
             {
-                new Klient{ Id_klient = 1, Imię = "Jan", Nazwisko = "Kowalski", Numer_telefonu = "222333444"},
-                new Klient{ Id_klient = 2, Imię = "Mariusz", Nazwisko = "Czerwiński", Numer_telefonu = "222333444"},
-                new Klient{ Id_klient = 3, Imię = "Korneliusz", Nazwisko = "Ostrowski", Numer_telefonu = "222333444"},
+                new Klient{ Id_klient = 1, Imie = "Jan", Nazwisko = "Kowalski", Numer_telefonu = "222333444"},
+                new Klient{ Id_klient = 2, Imie = "Mariusz", Nazwisko = "Czerwiński", Numer_telefonu = "222333444"},
+                new Klient{ Id_klient = 3, Imie = "Korneliusz", Nazwisko = "Ostrowski", Numer_telefonu = "222333444"},
 
             };
         }

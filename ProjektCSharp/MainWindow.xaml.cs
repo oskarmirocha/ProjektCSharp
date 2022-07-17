@@ -12,17 +12,35 @@ namespace ProjektCSharp
     /// </summary>
     public partial class MainWindow : Window
     {
-        ApplicationDbContext applicationDbContext;
+         ApplicationDbContext applicationDbContext;
+
+        public ApplicationDbContext ApplicationDbContext { get => applicationDbContext; set => applicationDbContext = value; }
+
         public MainWindow(ApplicationDbContext applicationDbContext)
         {
-            this.applicationDbContext = applicationDbContext;
+            this.ApplicationDbContext = applicationDbContext;
             InitializeComponent();
             GetWypożyczenia();
+            GetFilmy();
+            GetReżyserzy();
+            GetKlienci();
         }
 
         private void GetWypożyczenia()
         {
             WypożyczeniaDG.ItemsSource = applicationDbContext.Wypożyczenia.ToList();
+        }
+        private void GetFilmy()
+        {
+            WypożyczeniaDG.ItemsSource = applicationDbContext.Filmy.ToList();
+        }
+        private void GetReżyserzy()
+        {
+            WypożyczeniaDG.ItemsSource = applicationDbContext.Reżyserzy.ToList();
+        }
+        private void GetKlienci()
+        {
+            WypożyczeniaDG.ItemsSource = applicationDbContext.Klienci.ToList();
         }
     }
 }

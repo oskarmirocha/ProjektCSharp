@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektCSharp"
         mc:Ignorable="d" Background="LightGray"
-        Title="MainWindow" Height="600" Width="900">
+        Title="MainWindow" Height="600" Width="922">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
@@ -16,11 +16,11 @@
         <DataGrid Grid.Row="1" AutoGenerateColumns="False" Margin="10,254,10,10" Name="WypożyczeniaDG" IsReadOnly="True" Grid.RowSpan="2" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id Klienta" Width="70" Binding="{Binding Id_klient}"/>
-                <DataGridTextColumn Header="Imię" Width="180" Binding="{Binding Imię}"/>
+                <DataGridTextColumn Header="Imię" Width="180" Binding="{Binding Imie}"/>
                 <DataGridTextColumn Header="Nazwisko" Width="180" Binding="{Binding Nazwisko}"/>
-                <DataGridTextColumn Header="Id Filmu" Width="70" Binding="{Binding Id_klient}"/>
-                <DataGridTextColumn Header="Tytuł" Width="250" Binding="{Binding Tytuł}"/>
-                <DataGridTextColumn Header="Data Wypożyczenia" Width="150" Binding="{Binding Id_klient}"/>
+                <DataGridTextColumn Header="Id Filmu" Width="70" Binding="{Binding Id_Film}"/>
+                <DataGridTextColumn Header="Tytuł" Width="228" Binding="{Binding Tytuł}"/>
+                <DataGridTextColumn Header="Data Wypożyczenia" Width="150" Binding="{Binding Data_wypożyczenia}"/>
 
             </DataGrid.Columns>
         </DataGrid>

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
-using ProjektCSharp.Data;
+using Wypożyczenia.Data;
 
 namespace ProjektCSharp
 {
@@ -15,7 +15,7 @@ namespace ProjektCSharp
         public App()
         {
             ServiceCollection services = new ServiceCollection();
-            IServiceCollection serviceCollection = services.AddDbContext<DbContext>(option =>
+            services.AddDbContext<ApplicationDbContext>(option =>
             {
                 option.UseSqlite("Data Source = Film.db");
                 option.UseSqlite("Data Source = Wypożyczenie.db");
@@ -28,7 +28,7 @@ namespace ProjektCSharp
         }
         private void OnStartup(object s, StartupEventArgs e)
         {
-            var mainWindow = serviceProvider.GetRequiredService<MainWindow>();
+            var mainWindow = serviceProvider.GetService<MainWindow>();
             mainWindow.Show();
         }
 
