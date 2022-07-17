@@ -16,6 +16,8 @@ namespace ProjektCSharp
 
         public ApplicationDbContext ApplicationDbContext { get => applicationDbContext; set => applicationDbContext = value; }
 
+        Wypożyczenie NoweWypożyczenie = new Wypożyczenie();
+
         public MainWindow(ApplicationDbContext applicationDbContext)
         {
             this.ApplicationDbContext = applicationDbContext;
@@ -24,6 +26,8 @@ namespace ProjektCSharp
             GetFilmy();
             GetReżyserzy();
             GetKlienci();
+
+            DodajWypożyczenie.DataContext = NoweWypożyczenie;
         }
 
         private void GetWypożyczenia()

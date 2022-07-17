@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektCSharp"
         mc:Ignorable="d" Background="LightGray"
-        Title="MainWindow" Height="600" Width="922">
+        Title="Wypożyczalnia Projekt C#" Height="600" Width="922">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" FontWeight ="Bold" FontSize="20" FontFamily="Arial" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Wypożyczalnia projekt C#"></Label>
+        <Label Grid.Row="0" FontWeight ="Bold" FontSize="20" FontFamily="Arial" HorizontalAlignment="Center" VerticalAlignment="Center" Content=""></Label>
         <DataGrid Grid.Row="1" AutoGenerateColumns="False" Margin="10,254,10,10" Name="WypożyczeniaDG" IsReadOnly="True" Grid.RowSpan="2" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id Klienta" Width="70" Binding="{Binding Id_klient}"/>
@@ -24,5 +24,39 @@
 
             </DataGrid.Columns>
         </DataGrid>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="10,73,10,-241">
+                <StackPanel Margin="9,9,9,9">
+                    <Label Content="" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+                    <Grid x:Name="DodajWypożyczenie">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" Content="Imię"/>
+                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Imie}" />
+
+                        <Label Grid.Row="1" Grid.Column="0" Content="Nazwisko" />
+                        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Nazwisko}" />
+
+                        <Label Grid.Row="2" Grid.Column="0" Content="Tytuł"/>
+                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Tytuł}" />
+
+                        <Button Grid.Row="3" Content="Wypożycz" Margin="0,29,106,-29"/>
+
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </Grid>
     </Grid>
 </Window>
